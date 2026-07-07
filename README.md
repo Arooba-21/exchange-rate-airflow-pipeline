@@ -37,7 +37,7 @@ docker-compose up -d
 ## Project Structure
 ```
 ├── dags/
-│   └── file.py          # Airflow DAG
+│   └── Exchange_rate_dag.py          # Airflow DAG
 ├── docker-compose.yaml
 ├── .gitignore
 └── README.md
