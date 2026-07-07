@@ -1,0 +1,8 @@
+.env
+logs/
+logins/
+extracted.csv
+transformed.csv
+__pycache__/
+*.pyc
+plugins/__pycache__/
