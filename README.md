@@ -5,10 +5,11 @@ Automated ETL pipeline that fetches live PKR exchange rates daily using Apache A
 ## Pipeline Architecture
 ```
 ExchangeRate API (JSON) → Extract → Transform → Load → PostgreSQL
+API → S3 (raw) → Transform → S3 (processed) → PostgreSQL
 ```
 
 ## Tech Stack
-Python | Apache Airflow | Docker | PostgreSQL | Pandas | SQLAlchemy
+Python | Apache Airflow | Docker | PostgreSQL | Pandas | SQLAlchemy | AWS S3 (LocalStack) | boto3
 
 ## DAG Structure
 3 isolated tasks running daily:
